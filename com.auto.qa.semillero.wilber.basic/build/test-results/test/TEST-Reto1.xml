@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Reto1" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-10-27T15:08:15" hostname="DESKTOP-SNRI8U2" time="0.05">
-  <properties/>
-  <testcase name="helloTestingWorld()" classname="Reto1" time="0.05"/>
-  <system-out><![CDATA[mi fecha de nacimiento es: 03/03/1999]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
