@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="TestCrudApis" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-11-02T02:49:06" hostname="DESKTOP-D814HGP" time="5.798">
+  <properties/>
+  <testcase name="patch()" classname="TestCrudApis" time="5.798"/>
+  <system-out><![CDATA[Request method:	PATCH
+Request URI:	https://reqres.in/api/user/2
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "morpheus",
+    "job": "zion resident"
+}
+HTTP/1.1 200 OK
+Date: Wed, 02 Nov 2022 02:49:11 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Etag: W/"50-9vBVhe2IdgGtYj3XVzvVcYqVb+s"
+Via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=gJrc3giTN46%2FqRKoGemmFQStcJSt5PO2vEEv5LVibsnTZKAR6bBe%2FEohaiNwYb3ujlrCxhbqMjvQ9hZpW%2FfciHK6AEcADxFIwE%2B1haEtoY3gfLIjkXZkjPiiPg%3D%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 76398e35b801b3c8-MIA
+Content-Encoding: gzip
+
+{
+    "name": "morpheus",
+    "job": "zion resident",
+    "updatedAt": "2022-11-02T02:49:11.496Z"
+}
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

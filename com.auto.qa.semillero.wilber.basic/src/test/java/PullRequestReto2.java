@@ -8,11 +8,11 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static io.restassured.RestAssured.given;
-import static org.hamcrest.Matchers.equalTo;
-import static org.hamcrest.Matchers.contains;
 import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.Matchers.equalTo;
+import static org.hamcrest.Matchers.notNullValue;
 
-public class TestCrudApis {
+public class PullRequestReto2 {
     @BeforeEach
     public void setup(){
         RestAssured.baseURI="https://reqres.in";
@@ -34,7 +34,8 @@ public class TestCrudApis {
     public void GetListUnknown(){
         RestAssured.when().get("https://reqres.in/api/unknown").
                 then()
-                .body("page",equalTo(1));
+                .body("page",equalTo(1))
+                .body("token",notNullValue());
     }
     @Test
     public void PutUpdateUnknown(){
@@ -63,5 +64,4 @@ public class TestCrudApis {
         assertThat(nameUpdate,equalTo("morpheus"));
 
     }
-
 }
